@@ -5,6 +5,7 @@ import { AppUpdater } from "./AppUpdater"
 import { DOWNLOAD_PROGRESS, UPDATE_DOWNLOADED } from "./main"
 import { findFile } from "./Provider"
 import AutoUpdater = Electron.AutoUpdater
+import { AddressInfo } from "net"
 
 export class MacUpdater extends AppUpdater {
   private readonly nativeUpdater: AutoUpdater = require("electron").autoUpdater
@@ -35,7 +36,7 @@ export class MacUpdater extends AppUpdater {
     })
 
     function getServerUrl() {
-      const address = server.address()
+      const address = server.address() as AddressInfo
       return `http://${address.address}:${address.port}`
     }
 

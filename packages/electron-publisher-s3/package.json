@@ -14,8 +14,8 @@
     "fs-extra-p": "^4.5.2",
     "aws-sdk": "^2.207.0",
     "mime": "^2.2.0",
-    "electron-publish": "~0.0.0-semantic-release",
-    "builder-util": "^0.0.0-semantic-release",
+    "electron-publish": "file:../electron-publish",
+    "builder-util": "file:../builder-util",
     "bluebird-lst": "^1.0.5"
   },
   "typings": "./out/s3Publisher.d.ts"

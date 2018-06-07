@@ -11,7 +11,7 @@
     "out"
   ],
   "dependencies": {
-    "builder-util": "^0.0.0-semantic-release",
+    "builder-util": "file:../builder-util",
     "bluebird-lst": "^1.0.5",
     "fs-extra-p": "^4.5.2",
     "archiver": "^2.1.1",
@@ -21,7 +21,7 @@
     "7zip-bin": "~3.1.0"
   },
   "peerDependencies": {
-    "electron-builder-lib": "~0.0.0-semantic-release"
+    "electron-builder-lib": "file:../electron-builder-lib"
   },
   "types": "./out/SquirrelWindowsTarget.d.ts"
 }

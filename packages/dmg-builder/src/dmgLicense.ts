@@ -219,5 +219,6 @@ const regionCodes: any = {
   bo: 105,
   ne_NP: 106,
   kl: 107,
-  en_IE: 108
+  en_IE: 108,
+  id_ID: 109
 }

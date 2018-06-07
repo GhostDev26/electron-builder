@@ -16,10 +16,10 @@
     "fs-extra-p": "^4.5.2",
     "bluebird-lst": "^1.0.5",
     "parse-color": "^1.0.0",
-    "builder-util": "^0.0.0-semantic-release",
+    "builder-util": "file:../builder-util",
     "iconv-lite": "^0.4.19",
     "js-yaml": "^3.11.0",
-    "electron-builder-lib": "~0.0.0-semantic-release",
+    "electron-builder-lib": "file:../electron-builder-lib",
     "sanitize-filename": "^1.6.1"
   },
   "typings": "./out/dmg.d.ts"

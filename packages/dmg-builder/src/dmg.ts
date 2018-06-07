@@ -31,7 +31,7 @@ export class DmgTarget extends Target {
     const tempDmg = await createStageDmg(await packager.getTempFile(".dmg"), appPath, volumeName)
 
     // https://github.com/electron-userland/electron-builder/issues/2115
-    const backgroundFile = specification.background == null ? null : await transformBackgroundFileIfNeed(specification.background, packager.info.tempDirManager)
+    const backgroundFile = specification.background == null ? null : await transformBackgroundFileIfNeed(specification.background, <any>packager.info.tempDirManager)
     const finalSize = await computeAssetSize(packager.info.cancellationToken, tempDmg, specification, backgroundFile)
     await exec("hdiutil", ["resize", "-size", finalSize.toString(), tempDmg])
 

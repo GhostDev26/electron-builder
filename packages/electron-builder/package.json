@@ -48,8 +48,8 @@
   "dependencies": {
     "bluebird-lst": "^1.0.5",
     "chalk": "^2.3.2",
-    "builder-util-runtime": "0.0.0-semantic-release",
-    "builder-util": "0.0.0-semantic-release",
+    "builder-util-runtime": "file:../builder-util-runtime",
+    "builder-util": "file:../builder-util",
     "fs-extra-p": "^4.5.2",
     "is-ci": "^1.1.0",
     "read-config-file": "3.0.0",
@@ -57,9 +57,9 @@
     "update-notifier": "^2.3.0",
     "yargs": "^11.0.0",
     "lazy-val": "^1.0.3",
-    "electron-builder-lib": "0.0.0-semantic-release",
+    "electron-builder-lib": "file:../electron-builder-lib",
     "electron-download-tf": "4.3.4",
-    "dmg-builder": "0.0.0-semantic-release"
+    "dmg-builder": "file:../dmg-builder"
   },
   "typings": "./out/index.d.ts",
   "publishConfig": {
