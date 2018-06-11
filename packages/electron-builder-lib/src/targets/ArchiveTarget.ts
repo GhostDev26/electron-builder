@@ -28,7 +28,7 @@ export class ArchiveTarget extends Target {
     const artifactPath = path.join(this.outDir, packager.expandArtifactNamePattern(this.options, format, arch, defaultPattern, false))
     this.logBuilding(`${isMac ? "macOS " : ""}${format}`, artifactPath, arch)
     if (format.startsWith("tar.")) {
-      await tar(packager.compression, format, artifactPath, appOutDir, isMac, <any>packager.info.tempDirManager)
+      await tar(packager.compression, format, artifactPath, appOutDir, isMac, packager.info.tempDirManager)
     }
     else {
       await archive(format, artifactPath, appOutDir, {
