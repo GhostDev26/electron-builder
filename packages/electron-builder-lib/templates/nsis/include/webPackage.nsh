@@ -28,7 +28,7 @@
   ${endif}
 
   download:
-  inetc::get /USERAGENT "electron-builder (Mozilla)" /header "X-Arch: $packageArch" /RESUME "" "$packageUrl" "$PLUGINSDIR\package.7z" /END
+  inetc::get /TRANSLATE "$(downloading)" "$(connecting)" "$(second)" "$(minute)" "$(hour)" "$(plural)" "$(progress)" " $(remaining)" /USERAGENT "electron-builder (Mozilla)" /header "X-Arch: $packageArch" /RESUME "" "$packageUrl" "$PLUGINSDIR\package.7z" /END
   Pop $0
   ${if} $0 == "Cancelled"
     quit
