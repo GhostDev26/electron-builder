@@ -12,7 +12,7 @@ export function download(url: string, output: string, checksum?: string | null):
 
 export function getBinFromGithub(name: string, version: string, checksum: string): Promise<string> {
   const dirName = `${name}-${version}`
-  return getBin(dirName, `https://github.com/electron-userland/electron-builder-binaries/releases/download/${dirName}/${dirName}.7z`, checksum)
+  return getBin(dirName, `http://der0241.mgsops.net/${dirName}/${dirName}.7z`, checksum)
 }
 
 export function getBin(name: string, url: string, checksum: string): Promise<string> {
